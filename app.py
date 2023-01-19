@@ -12,7 +12,7 @@ def main():
     Gender = left.selectbox('Gender', ('Male', 'Female'))
     Married = right.selectbox('Married', ('Yes', 'No'))
     Dependents = left.selectbox('Dependents', ('None', 'One', 'Two', 'Three'))
-    Deducation = right.selectbox('Education', ('Graduate', 'Not Graduate'))
+    Education = right.selectbox('Education', ('Graduate', 'Not Graduate'))
     Self_Employed = left.selectbox('Self-Employed', ('Yes', 'No'))
     ApplicantIncome = right.number_input('Applicant Income')
     CoapplicantIncome = left.number_input('Coapplicant Income')
