@@ -11,7 +11,7 @@ def main():
     left, right = st.columns((2,2))
     Gender = left.selectbox('Gender', ('Male', 'Female'))
     Married = right.selectbox('Married', ('Yes', 'No'))
-    ependent = left.selectbox('Dependents', ('None', 'One', 'Two', 'Three'))
+    Dependents = left.selectbox('Dependents', ('None', 'One', 'Two', 'Three'))
     Deducation = right.selectbox('Education', ('Graduate', 'Not Graduate'))
     Self_Employed = left.selectbox('Self-Employed', ('Yes', 'No'))
     ApplicantIncome = right.number_input('Applicant Income')
@@ -26,7 +26,7 @@ def main():
     # if button is clicked
     if button:
         # make prediction
-        result = predict(Gender, Married, Dependent, Education, Self_Employed, ApplicantIncome,
+        result = predict(Gender, Married, Dependents, Education, Self_Employed, ApplicantIncome,
                         CoapplicantIncome, LoanAmount, Loan_Amount_Term, Credit_History, Property_Area)
         st.success(f'You are {result} for the loan')
 
