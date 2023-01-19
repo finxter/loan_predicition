@@ -19,7 +19,7 @@ def main():
     LoanAmount = right.number_input('Loan Amount')
     Loan_Amount_Term = left.number_input('Loan Tenor (in months)')
     Credit_History = right.number_input('Credit History', 0.0, 1.0)
-    Propert_Area = st.selectbox('Property Area', ('Semiurban', 'Urban', 'Rural'))
+    Property_Area = st.selectbox('Property Area', ('Semiurban', 'Urban', 'Rural'))
     button = st.button('Predict')
 
 
